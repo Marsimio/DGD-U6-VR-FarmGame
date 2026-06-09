@@ -8,6 +8,7 @@ public class GrowOverTime : MonoBehaviour
     [SerializeField] float duration = 10f;
 
     Coroutine growRoutine;
+    public bool IsGrowing => growRoutine != null;
 
     public void StartGrowing()
     {
